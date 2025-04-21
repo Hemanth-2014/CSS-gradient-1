@@ -2,10 +2,23 @@
     <head>
         <title> CSS gradients </title>
         <style>
+            @keyframes example{
+                0% {background-color: aquamarine;}
+                25% { background-color: blue;}
+                50% { background-color: brown;}
+                100% { background-color: black;}
+            }
             #lineargradient{
                 height: 200px;
                 background-color: aqua;
                 background-image: radial-gradient(orange,green);
+            }
+            #animation{
+                height: 100;
+                width: 100;
+                background-color: red;
+                animation-name: example;
+                animation-duration: 4s;
             }
         </style>
     </head>
@@ -13,6 +26,9 @@
         <div id="lineargradient"
         style="text-align: center; font-size: 40px;">
             welcome to linear gradient
+        </div>
+        <div id="animation">
+            hello
         </div>
     </body>
 </html>
